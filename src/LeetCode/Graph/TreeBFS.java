@@ -1,8 +1,6 @@
 package LeetCode.Graph;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * Created by mayiwei on 2017/4/2.
