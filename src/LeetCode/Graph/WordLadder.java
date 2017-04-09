@@ -22,7 +22,7 @@ public class WordLadder {
     public static int ladderLength(String beginWord, String endWord, List<String> wordList) {
         if (wordList==null||wordList.isEmpty()) return 0;
         if (!wordList.contains(endWord)) return 0;
-        Queue<Word> toChange = new LinkedList<>();
+        Queue<Word> toChange = new ArrayDeque<>();
         Set<String> visited = new HashSet<>();
         toChange.offer(new Word(beginWord,1));
         visited.add(beginWord);
@@ -30,15 +30,6 @@ public class WordLadder {
         Word tmp;
         while (!toChange.isEmpty()){
             tmp=toChange.poll();
-//            for (int i=0;i<tmp.val.length();i++){
-//                char[] chars = tmp.val.toCharArray();
-//                for (char c='a';c<='z';c++){
-//                    chars[i]=c;
-//                    inTmp=new String(chars);
-//                    if (inTmp.equals(endWord)) return level+1;
-//                    if (wordList.remove(inTmp)) toChange.offer(inTmp);
-//                }
-//            }
             for (String word:wordList){
                 if (visited.contains(word)) continue;
                 count=0;
