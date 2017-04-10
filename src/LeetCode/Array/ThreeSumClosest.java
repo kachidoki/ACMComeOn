@@ -26,6 +26,7 @@ public class ThreeSumClosest {
                 if (Math.abs(sum-target)<Math.abs(res-target)){
                     res=sum;
                 }
+                if (res-target==0) return res;
 
             }
         }
