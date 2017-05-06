@@ -1,4 +1,4 @@
-package LeetCode.Array;
+package LeetCode.Array.DP;
 
 /**
  * Created by mayiwei on 2017/5/5.
@@ -45,6 +45,18 @@ public class BestTimetoBuyandSellStockII {
         }
 
         return total;
+    }
+
+    //dp
+    public int maxProfit4(int[] prices) {
+        if (prices==null||prices.length==0) return 0;
+        int lastBuy,buy=Integer.MIN_VALUE,sell=0;
+        for (int i:prices){
+            lastBuy=buy;
+            buy=Math.max(sell-i,lastBuy);
+            sell=Math.max(lastBuy+i,sell);
+        }
+        return sell;
     }
 
 }

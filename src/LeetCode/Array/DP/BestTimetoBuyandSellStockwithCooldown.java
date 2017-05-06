@@ -1,4 +1,4 @@
-package LeetCode.Array;
+package LeetCode.Array.DP;
 
 /**
  * Created by mayiwei on 2017/5/5.
