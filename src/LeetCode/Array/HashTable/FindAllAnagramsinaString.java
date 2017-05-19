@@ -13,15 +13,17 @@ public class FindAllAnagramsinaString {
     public List<Integer> findAnagrams(String s, String p) {
         List<Integer> res=new ArrayList<>();
         if (s==null||p==null||s.length()==0||p.length()==0) return res;
-        int[] busket=new int[26];
+        int[] map=new int[26];
         for (char c:p.toCharArray()){
-            busket[c-'a']++;
+            map[c-'a']++;
         }
-        int start=0,end=0,count=p.length();
+        int begin=0,end=0,counter=p.length();
         while (end<s.length()){
-            if (end-start==p.length()&&busket[s.charAt(start++)-'a']++>=0) count++;
-            if (--busket[s.charAt(end++)-'a']>=0) count--;
-            if (count==0) res.add(start);
+            if (map[s.charAt(end++)-'a']-->0) counter--;
+            while (counter==0){
+                if (end-begin==p.length()) res.add(begin);
+                if (map[s.charAt(begin++)-'a']++==0) counter++;
+            }
         }
         return res;
     }

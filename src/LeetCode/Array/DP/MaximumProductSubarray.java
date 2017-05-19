@@ -1,4 +1,4 @@
-package LeetCode.Array;
+package LeetCode.Array.DP;
 
 /**
  * Created by mayiwei on 2017/4/21.
@@ -6,6 +6,7 @@ package LeetCode.Array;
 //https://leetcode.com/problems/maximum-product-subarray/#/description
 public class MaximumProductSubarray {
 
+    //dp
     public int maxProduct(int[] nums) {
         if (nums==null||nums.length==0) return 0;
         int max=nums[0],min=nums[0],res=nums[0];

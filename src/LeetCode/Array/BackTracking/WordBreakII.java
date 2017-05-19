@@ -1,4 +1,4 @@
-package LeetCode.Array;
+package LeetCode.Array.BackTracking;
 
 import java.util.HashMap;
 import java.util.LinkedList;

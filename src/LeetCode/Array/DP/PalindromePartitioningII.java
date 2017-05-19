@@ -1,4 +1,4 @@
-package LeetCode.Array;
+package LeetCode.Array.DP;
 
 /**
  * Created by mayiwei on 2017/4/24.
@@ -6,6 +6,7 @@ package LeetCode.Array;
 //https://leetcode.com/problems/palindrome-partitioning-ii/#/solutions
 public class PalindromePartitioningII {
 
+    //dp
     public int minCut(String s) {
         char[] c=s.toCharArray();
         int n=c.length;

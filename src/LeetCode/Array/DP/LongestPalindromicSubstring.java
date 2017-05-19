@@ -1,4 +1,4 @@
-package LeetCode.Array;
+package LeetCode.Array.DP;
 
 
 /**
@@ -48,6 +48,7 @@ public class LongestPalindromicSubstring {
     }
 
 
+    //dp
     public static String longestPalindrome2(String s) {
         if (s==null) return null;
         int n=s.length();
