@@ -16,6 +16,7 @@ public class HouseRobber {
         return Math.max(dp[num.length][0], dp[num.length][1]);
     }
 
+
     //优化
     public int rob2(int[] nums) {
         int rob = 0;
