@@ -1,4 +1,4 @@
-package LeetCode.Array;
+package LeetCode.Array.BinarySearch;
 
 import java.util.HashMap;
 import java.util.Map;

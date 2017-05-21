@@ -1,4 +1,4 @@
-package LeetCode.Array;
+package LeetCode.Array.TwoPoint;
 
 /**
  * Created by mayiwei on 2017/4/10.

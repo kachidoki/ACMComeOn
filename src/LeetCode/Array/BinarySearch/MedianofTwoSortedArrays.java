@@ -1,4 +1,4 @@
-package LeetCode.Array;
+package LeetCode.Array.BinarySearch;
 
 /**
  * Created by mayiwei on 2017/4/6.
