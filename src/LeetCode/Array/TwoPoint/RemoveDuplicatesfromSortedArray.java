@@ -3,6 +3,7 @@ package LeetCode.Array.TwoPoint;
 /**
  * Created by mayiwei on 2017/4/21.
  */
+//https://leetcode.com/problems/remove-duplicates-from-sorted-array/#/description
 public class RemoveDuplicatesfromSortedArray {
 
     public int removeDuplicates(int[] nums) {

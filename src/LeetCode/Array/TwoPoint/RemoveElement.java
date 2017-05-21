@@ -10,6 +10,7 @@ public class RemoveElement {
         removeElement2(new int[]{3,1,2,4,3},3);
     }
 
+    //two pointer 重置
     public int removeElement(int[] nums, int val) {
         if (nums==null||nums.length==0) return 0;
         int count=0,n=nums.length,index=0;

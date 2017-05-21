@@ -35,10 +35,10 @@ public class ThreeSum {
         return res;
     }
 
-    //简洁，基于两分
+    //two pointer 优化到n2
     public static List<List<Integer>> threeSum2(int[] num) {
         Arrays.sort(num);
-        List<List<Integer>> res = new LinkedList<>();
+        List<List<Integer>> res = new ArrayList<>();
         for (int i = 0; i < num.length-2; i++) {
             if (i == 0 || (i > 0 && num[i] != num[i-1])) {
                 int lo = i+1, hi = num.length-1, sum = 0 - num[i];

@@ -12,22 +12,21 @@ public class RemoveDuplicatesfromSortedArrayII {
 
     public static int removeDuplicates(int[] nums) {
         if (nums==null||nums.length==0) return 0;
-        int j=0,count=0;
-        for (int i=0;i<nums.length;i++){
-            if (nums[i]!=nums[j]){
-                nums[++j]=nums[i];
-                count++;
+        int res=1,count=1,index=1;
+        while (index<nums.length){
+            if (nums[index]!=nums[index-1]){
+                count=1;
+                nums[res++]=nums[index];
+            }else {
+                if (count++<2) nums[res++]=nums[index];
             }
-            if (nums[i]==nums[j]&&count<2){
-                nums[++j]=nums[i];
-                count++;
-            }
-
+            index++;
         }
-        return ++j;
+        return res;
     }
 
 
+    //巧妙的方法，只需要与k之前的比较就可以
     //Remove Duplicates from Sorted Array(no duplicates) :
 
     public int removeDuplicatesII(int[] nums) {

@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Created by mayiwei on 2017/4/9.
  */
-//https://leetcode.com/problems/3sum-closest/#/solutions
+//https://leetcode.com/problems/3sum-closest/#/description
 public class ThreeSumClosest {
 
 
@@ -27,7 +27,6 @@ public class ThreeSumClosest {
                     res=sum;
                 }
                 if (res-target==0) return res;
-
             }
         }
         return res;

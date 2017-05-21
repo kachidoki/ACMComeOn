@@ -33,6 +33,7 @@ public class ValidPalindrome {
         return true;
     }
 
+    //使用Character简化
     public boolean isPalindrome2(String s) {
         if (s.isEmpty()) {
             return true;

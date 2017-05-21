@@ -1,4 +1,4 @@
-package LeetCode.Array.TwoPoint;
+package LeetCode.Array.HashTable;
 
 /**
  * Created by mayiwei on 2017/4/22.
