@@ -34,7 +34,7 @@ public class MinimumWindowSubstring {
 
 //For most substring problem, we are given a string and need to find a substring of it which satisfy some restrictions.
 // A general way is to use a hashmap assisted with two pointers. The template is given below.
-
+//
 //    public int findSubstring(String s){
 //        int[] map=new int[256];
 //        int counter; // check whether the substring is valid

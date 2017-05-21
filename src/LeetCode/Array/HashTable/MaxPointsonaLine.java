@@ -1,4 +1,4 @@
-package LeetCode.Array;
+package LeetCode.Array.HashTable;
 
 import java.math.BigDecimal;
 import java.math.MathContext;

@@ -1,4 +1,4 @@
-package LeetCode.Array;
+package LeetCode.Array.Bit;
 
 import java.util.Arrays;
 
